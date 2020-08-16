@@ -9,6 +9,7 @@ import (
 
 const (
 	tcpEstablished = 1 // according to /include/net/tcp_states.h
+	tcpTimeWaited  = 6
 )
 
 // Connection is a (TCP) connection. The Proc struct might not be filled in.

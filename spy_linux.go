@@ -50,7 +50,7 @@ var cbConnections = func(processes bool) (ConnIter, error) {
 	}
 
 	return &pnConnIter{
-		pn:    NewProcNet(buf.Bytes(), tcpEstablished),
+		pn:    NewProcNet(buf.Bytes(), tcpTimeWaited),
 		buf:   buf,
 		procs: procs,
 	}, nil
